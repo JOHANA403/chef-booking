@@ -392,10 +392,10 @@ def send_blog_confirmation_email(submission_data):
         """
 
         # Send email
-        response = ses.send_email(
+                response = ses.send_email(
             Source='chef@mydgv.com',  # Replace with your verified SES email
             Destination={
-                'ToAddresses': ['dgv@mydgv.com', 'priya.yadav@mydgv.com', 'amanmanrai1@gmail.com', 'aman@thegreatmaharaja.com', 'info@maharajachef.com']  # Replace with your admin emails
+                'ToAddresses': ['amanmanrai1@gmail.com', 'aman@thegreatmaharaja.com']  # Replace with your admin emails
             },
             Message={
                 'Subject': {
